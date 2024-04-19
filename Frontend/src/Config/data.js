@@ -1,0 +1,1 @@
+export const defaultImage = "https://firebasestorage.googleapis.com/v0/b/mindfuel-54941.appspot.com/o/user%2Fuser.png?alt=media&token=e0da040c-7f03-4286-a3c8-d36cee4a36aa"

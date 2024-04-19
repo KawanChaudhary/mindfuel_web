@@ -1,0 +1,15 @@
+{
+  "name": "mindfuel",
+  "version": "1.0.0",
+  "description": "An application for sharing your knowledge.",
+  "main": "server.js",
+  "scripts": {
+    "install-server": "cd Backend && npm install",
+      "start-server": "cd Backend && node server.js",
+      "install-client": "cd Frontend && npm install",
+      "build-client": "cd Frontend && npm run build",
+      "start-client": "cd Frontend && npm run start"
+  },
+  "author": "kawansingh",
+  "license": "ISC"
+}
