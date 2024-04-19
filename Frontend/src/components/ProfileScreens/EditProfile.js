@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import { FaUserAlt } from 'react-icons/fa'
 import { AiOutlineUpload } from 'react-icons/ai'
 import Loader from "../GeneralScreens/Loader";
 import { useNavigate } from 'react-router-dom';
@@ -29,7 +28,7 @@ const EditProfile = () => {
         formdata.append("photo", photo)
 
         try {
-            const { data } = await axios.post("/user/editProfile", formdata, config)
+            await axios.post("/user/editProfile", formdata, config)
 
             setSuccess('Edit Profile successfully ')
             setTimeout(() => {
@@ -120,7 +119,7 @@ const EditProfile = () => {
                                     <div class="absolute">
                                         Currently Image
                                     </div>
-                                    <img src={previousPhoto == null || previousPhoto =="" ? defaultImage : previousPhoto} alt="userPhoto" />
+                                    <img src={previousPhoto == null || previousPhoto === "" ? defaultImage : previousPhoto} alt="userPhoto" />
                                 </div>
 
                             </div>

@@ -14,7 +14,6 @@ const EditStory = () => {
     const slug = useParams().slug
     const imageEl = useRef(null)
     const [loading, setLoading] = useState(true)
-    const [story, setStory] = useState({})
     const [image, setImage] = useState('')
     const [previousImage, setPreviousImage] = useState('')
     const [title, setTitle] = useState('')
@@ -29,7 +28,6 @@ const EditStory = () => {
             setLoading(true)
             try {
                 const { data } = await axios.get(`/story/editStory/${slug}`, config)
-                setStory(data.data)
                 setTitle(data.data.title)
                 setContent(data.data.content)
                 setImage(data.data.image)
@@ -41,7 +39,7 @@ const EditStory = () => {
             }
         }
         getStoryInfo()
-    }, [])
+    }, [config, navigate, slug]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -52,7 +50,7 @@ const EditStory = () => {
         formdata.append("previousImage", previousImage)
 
         try {
-            const { data } = await axios.put(`/story/${slug}/edit`, formdata, config)
+            await axios.put(`/story/${slug}/edit`, formdata, config)
 
             setSuccess('Edit Story successfully ')
 

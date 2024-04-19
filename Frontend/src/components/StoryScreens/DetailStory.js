@@ -15,7 +15,6 @@ const DetailStory = () => {
   const [likeCount, setLikeCount] = useState(0)
   const [activeUser, setActiveUser] = useState({})
   const [story, setStory] = useState({})
-  const [storyLikeUser, setStoryLikeUser] = useState([])
   const [sidebarShowStatus, setSidebarShowStatus] = useState(false)
   const [loading, setLoading] = useState(true)
   const slug = useParams().slug
@@ -48,7 +47,6 @@ const DetailStory = () => {
         setStory(data.data)
         setLikeStatus(data.likeStatus)
         setLikeCount(data.data.likeCount)
-        setStoryLikeUser(data.data.likes)
         setLoading(false)
 
         const story_id = data.data._id;
@@ -74,7 +72,7 @@ const DetailStory = () => {
     }
     getDetailStory();
 
-  }, [slug, setLoading])
+  }, [slug, setLoading, navigate])
 
 
 
@@ -92,7 +90,6 @@ const DetailStory = () => {
       })
 
       setLikeCount(data.data.likeCount)
-      setStoryLikeUser(data.data.likes)
 
     }
     catch (error) {

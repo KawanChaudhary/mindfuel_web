@@ -32,7 +32,7 @@ const ReadListPage = () => {
         getUserReadingList()
 
 
-    }, [])
+    }, [config, navigate])
 
 
     const editDate = (createdAt) => {

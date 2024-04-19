@@ -41,7 +41,7 @@ const Profile = () => {
         }
 
         getUserProfile()
-    }, [setLoading])
+    }, [setLoading, navigate, config])
 
 
 

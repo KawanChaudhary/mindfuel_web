@@ -1,4 +1,4 @@
-export default {
+const config = {
     toolbar: {
         items: [
             'heading',
@@ -21,3 +21,5 @@ export default {
     },
     language: 'en'
 };
+
+export default config;

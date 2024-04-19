@@ -51,7 +51,7 @@ const Home = () => {
       }
     }
     getStories()
-  }, [setLoading, search, page, navigate])
+  }, [setLoading, search, page, navigate,searchKey])
 
 
   useEffect(() => {
