@@ -1,7 +1,6 @@
 <H1 align ="center" > MIND FUEL  </h1>
 
-<h5  align ="center" color="blue"> 
-Fullstack open source blogging application made with MongoDB & Firebase, Express, React & Nodejs (MERN) </h5>
+<h4 ><span style="color: red;">Fullstack open source blogging application made with Firebase, MongoDB, Express, React & Nodejs</span> </h4>
 <br/>
 
 <h4>Content</h4>
