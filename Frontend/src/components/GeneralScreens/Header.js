@@ -9,7 +9,6 @@ import { BsBookmarks } from 'react-icons/bs'
 import SkeletonElement from '../Skeletons/SkeletonElement';
 import { AuthContext } from '../../Context/AuthContext';
 import { defaultImage } from '../../Config/data';
-import { RiLightbulbFlashFill } from "react-icons/ri";
 
 const Header = () => {
 
@@ -42,16 +41,10 @@ const Header = () => {
 
 
                 <Link to="/" className="logo">
-                    {/* <img src="logo.png" width="250px" /> */}
-                <div className='logoName'>
-                    <h5 className=''>
+                    <h5>
                         mind fuel
 
-
                     </h5>
-                        <RiLightbulbFlashFill className='logoIcon' />
-
-                </div>
                 </Link>
                 <SearchForm />
                 <div className='header_options'>
