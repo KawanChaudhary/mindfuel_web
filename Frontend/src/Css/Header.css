@@ -81,7 +81,7 @@ header .logo h5 {
 
 @media only screen and (max-width: 1030px) {
     header .averager {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
 
     .search-form {
