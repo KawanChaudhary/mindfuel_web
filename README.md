@@ -13,6 +13,7 @@
       - [Backend](#backend)
       - [Database](#database)
   - * [Author](#author)
+  - * [Other Details](#other-details)
   - * [License](#license)
 
 ## Live website link
@@ -152,6 +153,10 @@ This project was created using the following technologies.
 
 - [MongoDB ](https://www.mongodb.com/) - It provides a free cloud service to store MongoDB collections.
 - [Firebase](https://www.npmjs.com/package/firebase-admin) - The Firebase Admin Node.js SDK enables access to Firebase services from environments in Node.js for uploading files.
+
+## Other Details
+
+For the project to be deployed on render, package.json has been added to the root directory. You may view the website from the first section.
   
 
 ## Author
