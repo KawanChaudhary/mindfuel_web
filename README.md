@@ -152,9 +152,7 @@ This project was created using the following technologies.
 
 - [MongoDB ](https://www.mongodb.com/) - It provides a free cloud service to store MongoDB collections.
 - [Firebase](https://www.npmjs.com/package/firebase-admin) - The Firebase Admin Node.js SDK enables access to Firebase services from environments in Node.js for uploading files.
- 
- ##  Screenshots 
- 
+  
 
 ## Author
 - Github: [kawanchaudhary](https://github.com/KawanChaudhary)
