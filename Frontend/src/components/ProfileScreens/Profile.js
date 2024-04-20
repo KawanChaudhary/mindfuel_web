@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import "../../Css/Profile.css"
 import { Link, useNavigate } from 'react-router-dom';
 import Loader from "../GeneralScreens/Loader";

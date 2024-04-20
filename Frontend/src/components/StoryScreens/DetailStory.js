@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import "../../Css/DetailStory.css"

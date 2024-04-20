@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useContext } from 'react';
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import Loader from '../GeneralScreens/Loader';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';

@@ -1655,11 +1655,6 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@react-oauth/google@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.npmjs.org/@react-oauth/google/-/google-0.12.1.tgz"
-  integrity sha512-qagsy22t+7UdkYAiT5ZhfM4StXi9PPNvw0zuwNmabrWyMKddczMtBIOARflbaIj+wHiQjnMAsZmzsUYuXeyoSg==
-
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.0"
   resolved "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.0.tgz"
@@ -7404,7 +7399,7 @@ react-dev-utils@^12.0.0:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@*, react-dom@^17.0.2, react-dom@>=16.8, react-dom@>=16.8.0:
+react-dom@*, react-dom@^17.0.2, react-dom@>=16.8:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -7508,7 +7503,7 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@*, "react@^16.13.1 || ^17.0.0", react@^17.0.2, "react@>= 16", react@>=16.8, react@>=16.8.0, react@17.0.2:
+react@*, "react@^16.13.1 || ^17.0.0", react@^17.0.2, "react@>= 16", react@>=16.8, react@17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==

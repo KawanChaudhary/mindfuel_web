@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import { AiOutlineUpload } from 'react-icons/ai'
 import Loader from "../GeneralScreens/Loader";
 import { useNavigate } from 'react-router-dom';

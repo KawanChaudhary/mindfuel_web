@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import StoryComments from './StoryComments';
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import AddComment from './AddComment';
 
 const CommentSidebar = ({ slug, sidebarShowStatus, setSidebarShowStatus, activeUser }) => {

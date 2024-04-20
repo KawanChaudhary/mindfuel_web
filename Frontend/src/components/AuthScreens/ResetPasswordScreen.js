@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import axios from "axios";
+import axios from '../../Axios/AxiosInstance';
 import "../../Css/ResetPasswordScreen.css"
 
 const ResetPasswordScreen = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
-import axios from 'axios'
+import axios from '../../Axios/AxiosInstance'
 import Loader from "../GeneralScreens/Loader";
 import { useNavigate, Link } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'

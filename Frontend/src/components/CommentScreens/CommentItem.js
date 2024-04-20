@@ -5,7 +5,7 @@ import {
     MdWavingHand
 } from 'react-icons/md'
 import { BsThreeDots } from 'react-icons/bs'
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import { useNavigate } from 'react-router-dom';
 
 const CommentItem = ({ comment, activeUser }) => {

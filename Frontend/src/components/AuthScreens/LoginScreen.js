@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import axios from '../../Axios/AxiosInstance';
 import "../../Css/Login.css"
 import { Link, useNavigate } from "react-router-dom";
 import Header from "../GeneralScreens/Header";

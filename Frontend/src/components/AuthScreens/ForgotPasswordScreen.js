@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import axios from '../../Axios/AxiosInstance';
 import { Link } from "react-router-dom";
 import "../../Css/ForgotPassword.css"
 import { BsArrowBarLeft } from 'react-icons/bs'

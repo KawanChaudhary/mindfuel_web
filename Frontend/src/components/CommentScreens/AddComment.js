@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import axios from 'axios';
+import axios from '../../Axios/AxiosInstance';
 import StarRating from './StarRating';
 import { BsShieldCheck, BsCheckAll } from 'react-icons/bs'
 import { IoAdd } from 'react-icons/io5'

@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from '../../Axios/AxiosInstance';
 import { v4 as uuidv4 } from 'uuid';
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -25,7 +25,7 @@ const Home = () => {
       setLoading(true)
       try {
 
-        const { data } = await axios.get(`https://mindfuel-web.onrender.com/story/getAllStories?search=${searchKey || ""}&page=${page}`)
+        const { data } = await axios.get(`/story/getAllStories?search=${searchKey || ""}&page=${page}`)
 
         if (searchKey) {
           navigate({
