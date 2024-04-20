@@ -172,7 +172,7 @@ const DetailStory = () => {
                   <ul>
                     {story.author &&
                       <li className='story-author-info'>
-                        <img src={`${story.author.photo == null && story.author.photo === "" ? defaultImage : story.author.photo}`} alt={story.author.username} />
+                        <img src={`${story.author.photo == null || story.author.photo === "" ? defaultImage : story.author.photo}`} alt={story.author.username} />
                         <span className='story-author-username'>{story.author.username}  </span>
                       </li>
                     }
