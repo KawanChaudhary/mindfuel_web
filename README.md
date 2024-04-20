@@ -1,24 +1,26 @@
-<H1 align ="center" > MINDFUEL  </h1>
+<H1 align ="center" > MIND FUEL  </h1>
 
-
-<h5  align ="center"> 
+<h5  align ="center" color="blue"> 
 Fullstack open source blogging application made with MongoDB & Firebase, Express, React & Nodejs (MERN) </h5>
 <br/>
-  * [Live website link](#live-website-link)
-  * [Configuration and Setup](#configuration-and-setup)
-  * [Key Features](#key-features)
-  * [Technologies used](#technologies-used)
+
+<h4>Content</h4>
+
+  - * [Live website link](#live-website-link)
+  - * [Configuration and Setup](#configuration-and-setup)
+  - * [Key Features](#key-features)
+  - * [Technologies used](#technologies-used)
       - [Frontend](#frontend)
       - [Backend](#backend)
       - [Database](#database)
-  * [Author](#author)
-  * [License](#license)
+  - * [Author](#author)
+  - * [License](#license)
 
 ## Live website link
 
-<h4>Check the live website : <a href="https://mindfuel-web-frnt.onrender.com/"> Click here </a></h4>
+<h4>Check the live website : <a href="https://mindfuel-web-frnt.onrender.com/" target="_blank"> Click here </a> 🚀</h4>
 
-<h5 style="color: green;">If you enjoy the content, please register and contribute a well-written story.</h5>
+<h5>If you enjoy the content, please register and contribute a well-written story.</h5>
 
 ## Configuration and Setup
 
