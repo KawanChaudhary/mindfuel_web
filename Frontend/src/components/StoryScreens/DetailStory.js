@@ -9,6 +9,7 @@ import { FiEdit, FiArrowLeft } from 'react-icons/fi'
 import { FaRegComment } from 'react-icons/fa'
 import { BsBookmarkPlus, BsThreeDots, BsBookmarkFill } from 'react-icons/bs'
 import CommentSidebar from '../CommentScreens/CommentSidebar';
+import { defaultImage } from '../../Config/data';
 
 const DetailStory = () => {
   const [likeStatus, setLikeStatus] = useState(false)
@@ -171,7 +172,7 @@ const DetailStory = () => {
                   <ul>
                     {story.author &&
                       <li className='story-author-info'>
-                        <img src={`${story.author.photo}`} alt={story.author.username} />
+                        <img src={`${story.author.photo == null && story.author.photo === "" ? defaultImage : story.author.photo}`} alt={story.author.username} />
                         <span className='story-author-username'>{story.author.username}  </span>
                       </li>
                     }
