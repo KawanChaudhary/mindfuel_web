@@ -39,10 +39,9 @@ $ npm run start (to start the frontend)
 
 ```
 <h5>
-To run the application on localhost change the backend url 
-Directory -> Frontend/src/Axios/axiosInstance.js
-Replace `${process.env.REACT_APP_BACKEND_URI}` with "http://localhost:5000/"
-</h5>
+To run the application on localhost change the backend url </h5>
+<h5>Directory -> Frontend/src/Axios/axiosInstance.js </h5>
+<h5>Replace `${process.env.REACT_APP_BACKEND_URI}` with "http://localhost:5000/"</h5>
 
 In the second terminal
 
