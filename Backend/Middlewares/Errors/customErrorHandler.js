@@ -8,7 +8,7 @@ const customErrorHandler = (err,req,res,next)=> {
 
     if (err.name === 'SyntaxError') {
 
-        err = new CustomError('Unexpected Sytax ', 400)
+        err = new CustomError('Unexpected Syntax ', 400)
     }
     if (err.name === 'ValidationError') {
 

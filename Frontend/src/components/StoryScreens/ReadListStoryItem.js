@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 const ReadListStoryItem = ({ story, editDate }) => {
 
-    const truncateContent = (content) => {
-        const trimmedString = content.substr(0, 130);
-        return trimmedString
-    }
+    // const truncateContent = (content) => {
+    //     const trimmedString = content.substr(0, 130);
+    //     return trimmedString
+    // }
 
     return (
 
@@ -37,11 +37,11 @@ const ReadListStoryItem = ({ story, editDate }) => {
                             {story.title}
                         </a>
                     </div>
-                    <div className="readList-story-content">
+                    {/* <div className="readList-story-content">
 
                         <span dangerouslySetInnerHTML={{ __html: truncateContent(story.content) + "..." }}></span>
 
-                    </div>
+                    </div> */}
 
                 </div>
 

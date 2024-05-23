@@ -47,7 +47,7 @@ const login = asyncErrorWrapper(async (req, res, next) => {
     }
 
     if (!comparePassword(password, user.password)) {
-        return next(new CustomError("Please chech your credentails", 404))
+        return next(new CustomError("Please check your credentials", 404))
     }
 
     sendToken(user, 200, res);
@@ -58,7 +58,7 @@ const login = asyncErrorWrapper(async (req, res, next) => {
 
 
 const forgotpassword = asyncErrorWrapper(async (req, res, next) => {
-    const { URI, EMAIL_USERNAME } = process.env;
+    const { RENDER_FRONTEND_URI, EMAIL_USERNAME } = process.env;
 
     const resetEmail = req.body.email;
 
@@ -72,7 +72,7 @@ const forgotpassword = asyncErrorWrapper(async (req, res, next) => {
 
     await user.save();
 
-    const resetPasswordUrl = `${URI}/resetpassword?resetPasswordToken=${resetPasswordToken}`
+    const resetPasswordUrl = `${RENDER_FRONTEND_URI}/resetpassword?resetPasswordToken=${resetPasswordToken}`
 
     const emailTemplate = `
     <h3 style="color : red "> Reset Your Password </h3>
@@ -86,7 +86,7 @@ const forgotpassword = asyncErrorWrapper(async (req, res, next) => {
         sendEmail({
             from: EMAIL_USERNAME,
             to: resetEmail,
-            subject: " ✔ Reset Your Password  ✔",
+            subject: " MINDFUEL: Reset Your Password  ✔",
             html: emailTemplate
         })
 

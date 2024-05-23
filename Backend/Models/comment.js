@@ -9,7 +9,7 @@ const CommentSchema = new mongoose.Schema({
     content: {
         type: String,
         required: [true, "Please provide a content"],
-        minlength: [3, " Please provide a content least 3 characters"]
+        minlength: [3, "Please provide a content at least 3 characters"]
     },
     author: {
         type: mongoose.Schema.ObjectId,

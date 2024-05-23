@@ -192,8 +192,15 @@
 }
 
 .story-Image-Wrap img {
-    width: 115px;
+    width: 180px;
     height: 115px;
+}
+
+@media screen and (max-width: 576px) {
+    .story-Image-Wrap img {
+        width: 115px;
+        height: 115px;
+    }
 }
 
 .empty-readList {
