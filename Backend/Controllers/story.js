@@ -56,7 +56,13 @@ const getAllStories = asyncErrorWrapper(async (req, res, next) => {
 
     query = query.sort("-likeCount -commentCount -createdAt")
 
-    const stories = await query
+    const stories = []
+
+    for(let q of await query){
+        var story = await Story.findById(q.id).populate("author")
+        stories.push(story);
+    }
+
 
     return res.status(200).json(
         {
