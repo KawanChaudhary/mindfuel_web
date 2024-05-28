@@ -18,7 +18,7 @@
 
 ## Live website link
 
-<h4>Check the live website : <a href="https://mindfuel-web-frnt.onrender.com/" target="_blank"> Click here </a> 🚀</h4>
+<h4>Check the live website : <a href="https://mindfuel-web-fe.onrender.com/" target="_blank"> Click here </a> 🚀</h4>
 
 <h5>If you enjoy the content, please register and contribute a well-written story.</h5>
 
