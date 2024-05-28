@@ -106,6 +106,11 @@ const addStoryToReadList = asyncErrorWrapper(async (req, res, next) => {
         user.readList.push(story.id)
         user.readListLength = user.readList.length
         await user.save();
+
+        story.readList.push(user.id);
+        story.readListLength = story.readList.length;
+        await story.save();
+
     }
 
     else {
@@ -113,6 +118,12 @@ const addStoryToReadList = asyncErrorWrapper(async (req, res, next) => {
         user.readList.splice(index, 1)
         user.readListLength = user.readList.length
         await user.save();
+
+        const index2 = story.readList.indexOf(user.id)
+        story.readList.splice(index2, 1)
+        story.readListLength = story.readList.length
+        await story.save();
+
     }
 
     const status = user.readList.includes(story.id)

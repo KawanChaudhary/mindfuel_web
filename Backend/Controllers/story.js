@@ -3,6 +3,8 @@ const Story = require("../Models/story");
 const deleteImageFile = require("../Helpers/Libraries/deleteImageFile");
 const { searchHelper, paginateHelper } = require("../Helpers/query/queryHelpers");
 const { uploadImageToFirebase } = require("../Helpers/Libraries/imageUpload");
+const { read } = require("fs");
+const User = require("../Models/user");
 
 const addStory = asyncErrorWrapper(async (req, res, next) => {
 
@@ -143,12 +145,12 @@ const editStory = asyncErrorWrapper(async (req, res, next) => {
     const { slug } = req.params;
     const { title, content, image, previousImage } = req.body;
 
-    const story = await Story.findOne({ slug: slug })    
+    const story = await Story.findOne({ slug: slug })
 
-    
+
     story.title = title;
     story.content = content;
-    
+
     if (!req.file) {
         // if the image is not sent
         story.image = previousImage
@@ -177,6 +179,16 @@ const deleteStory = asyncErrorWrapper(async (req, res, next) => {
     const { slug } = req.params;
 
     const story = await Story.findOne({ slug: slug })
+
+    const readList = story.readList;
+
+    for (let readerUser of readList) {
+        const user = await User.findById(readerUser);
+        const index = user.readList.indexOf(story.id);
+        user.readList.splice(index, 1);
+        user.readListLength = user.readList.length;
+        await user.save();
+    }
 
     deleteImageFile(req, story.image);
 

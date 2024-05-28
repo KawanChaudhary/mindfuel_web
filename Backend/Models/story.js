@@ -45,6 +45,14 @@ const StorySchema = new mongoose.Schema({
     commentCount: {
         type: Number,
         default: 0
+    },
+    readList: [{
+            type: mongoose.Schema.ObjectId,
+            ref: "Readlist"
+    }],
+    readListCount: {
+        type: Number,
+        default: 0
     }
 
 

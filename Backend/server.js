@@ -38,10 +38,11 @@ connectDatabase();
 const app = express() ;
 
 app.use(express.json());
-// process.env.RENDER_FRONTEND_URI
+
 const corsOptions ={
   origin:`${process.env.RENDER_FRONTEND_URI}`, 
-  credentials:true,            //access-control-allow-credentials:true
+  // origin:`${process.env.URI}`, 
+  credentials:true,     
   optionSuccessStatus:200
 }
 app.use(cors(corsOptions));
