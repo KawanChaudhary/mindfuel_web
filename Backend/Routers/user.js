@@ -2,7 +2,7 @@ const express = require("express")
 
 const {imageUpload} = require("../Helpers/Libraries/imageUpload");
 
-const { profile, editProfile, changePassword, addStoryToReadList, readListPage } = require("../Controllers/user");
+const { profile, editProfile, changePassword, addStoryToReadList, readListPage, myStories } = require("../Controllers/user");
 const { getAccessToRoute } = require("../Middlewares/Authorization/auth");
 
 
@@ -13,6 +13,8 @@ router.get("/profile", getAccessToRoute, profile)
 router.post("/editProfile", [getAccessToRoute, imageUpload.single("photo")], editProfile)
 
 router.put("/changePassword", getAccessToRoute, changePassword)
+
+router.get("/myStories", getAccessToRoute, myStories)
 
 router.post("/:slug/addStoryToReadList", getAccessToRoute, addStoryToReadList)
 

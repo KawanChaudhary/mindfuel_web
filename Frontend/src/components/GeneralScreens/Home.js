@@ -27,6 +27,8 @@ const Home = () => {
 
         const { data } = await axios.get(`/story/getAllStories?search=${searchKey || ""}&page=${page}`)
 
+        
+
         if (searchKey) {
           navigate({
             pathname: '/',

@@ -157,10 +157,23 @@ const readListPage = asyncErrorWrapper(async (req, res, next) => {
 
 })
 
+const myStories = asyncErrorWrapper(async (req, res, next) => {
+
+    const user = await User.findById(req.user.id)
+    const myStories = await Story.find({author:user.id})
+
+    return res.status(200).json({
+        success: true,
+        data: myStories
+    })
+
+})
+
 module.exports = {
     profile,
     editProfile,
     changePassword,
     addStoryToReadList,
-    readListPage
+    readListPage,
+    myStories
 }
