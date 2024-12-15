@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
 .Inclusive-addStory-page {
     width: 1000px;
     margin: 1.2rem auto;
@@ -12,7 +13,7 @@
 
 .Inclusive-addStory-page .addStory-form {
     position: relative;
-    width: 581px;
+    width: 750px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -28,8 +29,15 @@
     font-size: 1.4rem;
     padding-left: 1rem;
     font-weight: 450;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: "Balsamiq Sans", cursive;
     border-bottom: none;
+}
+
+@media only screen and (min-width: 760px) {
+    .ck {
+        width: 750px;
+        ;
+    }
 }
 
 .ck-editor {
@@ -40,6 +48,7 @@
     .Inclusive-addStory-page .addStory-form {
         width: 80vw;
     }
+
     .ck.ck-reset.ck-editor.ck-rounded-corners {
         width: 100% !important;
     }
@@ -62,10 +71,12 @@
 .ck-toolbar__items,
 .ck-toolbar div {
     border: none !important;
+    display: flex;
+    justify-content: center;
 }
 
 .ck-editor__editable {
-    height: 250px;
+    height: 50vw !important;
     padding: 0.5rem 1rem !important;
 }
 
