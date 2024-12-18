@@ -40,8 +40,7 @@ const app = express() ;
 app.use(express.json());
 
 const corsOptions ={
-  origin:`${process.env.RENDER_FRONTEND_URI}`, 
-  // origin:`${process.env.URI}`, 
+  origin:'*', 
   credentials:true,     
   optionSuccessStatus:200
 }
